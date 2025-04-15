@@ -1,0 +1,43 @@
+@import './variables.scss';
+@import url("https://use.typekit.net/ozt7zur.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 11px;
+}
+@media (min-width: 768px){
+:root{
+    font-size: 12px;
+}
+}
+@media (min-width: 1024px){
+:root{
+    font-size: 13px;
+}
+}
+@media (min-width: 1200px){
+:root{
+    font-size: 14px;
+}
+}
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    color: $main-color;
+    font-family: $serif-font;
+}
