@@ -1,6 +1,6 @@
 import Airtable from 'airtable';
 import { NextResponse } from 'next/server';
-// @ts-ignore
+// @ts-expect-error
 import nodemailer from 'nodemailer';
 
 interface RequestData {
