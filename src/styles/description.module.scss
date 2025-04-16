@@ -1,0 +1,164 @@
+@import "./variables.scss";
+
+.container{
+    color: $secondary-color;
+    width: 70%;
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subtitle{
+    font-size: 2.4em;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.paragraph{
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.footnote{
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.speakersBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 0 40px 0;
+
+    .speaker{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        img{
+            margin-top: 25px;
+        }
+        .speakerInfo{
+            width: 250px;
+            background-color: #266092;
+            color: #f2e9e1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 10px;
+            padding: 15px 10px;
+        }
+        .speakerName{
+            margin: 0;
+            font-size: 1.6em;
+        }
+        .speakerDescription{
+            margin-top: 5px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+    }
+    @media (min-width: 1140px){
+        .speaker{
+            width: 30%;
+        }
+    }
+}
+
+.planBox{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    .dayBox{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .day{
+        font-size: 2em;
+        font-style: italic;
+        margin: 15px 0 10px 0;
+    }
+    .daysubheader{
+        font-size: 1.6em;
+        margin-top: 10px;
+        font-style: italic;
+        align-self: center;
+    }
+    .time{
+        font-size: 1.8em;
+    }
+    .event{
+        font-size: 1.8em;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+}
+
+@media (min-width: 768px){
+    .planBox{
+        .dayBox{
+            width: 500px;
+        }
+    }
+}
+
+.videoBox{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 56.25%;
+    margin: 75px 0;
+    .video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.button{
+    text-decoration: none;
+    font-family: 'ivypresto-display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 0 3.5em 40px 3.5em;
+    font-size: 1.8em;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 1px;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    transition: all .3s ease-out;
+    &:hover{
+        background: $secondary-color;
+        color: white;
+        border: 2px solid $secondary-color;
+    }
+}

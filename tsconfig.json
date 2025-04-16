@@ -19,9 +19,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "#/*": ["./src/styles/*"],
-      "&/*": ["./src/app/components/*"],
+      "@/*": ["./src/*"]
     },
     "baseUrl": "."
   },
