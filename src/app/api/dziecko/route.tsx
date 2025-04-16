@@ -1,6 +1,6 @@
 import Airtable from 'airtable';
 import { NextResponse } from 'next/server';
-// @ts-expect-error
+// @ts-expect-error: old library
 import nodemailer from 'nodemailer';
 
 interface RequestData {
@@ -47,6 +47,7 @@ async function airtableRequest(data: RequestData): Promise<Result> {
       );
     } catch (err) {
       reject("Error while connecting to Airtable");
+      console.error(err);
     }
   }).catch(err => {
     console.error(err);
@@ -71,7 +72,7 @@ async function sendEmail(email: string, kid: string): Promise<Result> {
       }
     });
 
-    const info = await transporter.sendMail({
+    await transporter.sendMail({
       from: '"Płomień Ducha" <info@plomienducha.pl>',
       to: email,
       subject: "Płomień Ducha 2025: Rejestracja na zajęcia dla dzieci",
@@ -138,7 +139,7 @@ async function sendEmail(email: string, kid: string): Promise<Result> {
 export async function POST(req: Request) {
   try {
     const body: RequestData = await req.json();
-    const { kid, birthday, parent, email, phone } = body;
+    const { kid, email } = body;
 
     const result = await airtableRequest(body);
     if (!result.isResolved) throw new Error(result.errMessage);
@@ -147,7 +148,7 @@ export async function POST(req: Request) {
     if (!mail.isResolved) throw new Error(mail.errMessage);
 
     return NextResponse.json({ result: 'ok' }, { status: 200 });
-  } catch (err: any) {
+  } catch (err: Error | unknown) {
     return NextResponse.json({ error: err instanceof Error ? err.message : String(err) }, { status: 500 });
   }
 }

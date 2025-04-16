@@ -106,6 +106,7 @@ export default function AttendeeForm({ setIsSend }: AttendeeFormProps) {
         throw new Error(body.error)
       }
     }).catch(err => {
+      console.error(err);
       setIsLoading(false);
       setStatus('ERR')
     })

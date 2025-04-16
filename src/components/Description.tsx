@@ -38,7 +38,7 @@ export default function Description() {
                     <div className={styles.speakerInfo}>
                         <h3 className={styles.speakerName}>Ps. Mariusz Antoszczuk</h3>
                     </div>
-                    <p className={styles.speakerDescription}>Jedną z sobotnich sesji poprowadzi pastor Mariusz Antoszczuk, pastor kościoła KZ “Kanaan” w Namysłowie. Misjonarz, człowiek przebudzenia, kochający kościół. Autor największej monografii z zakresu pentekostalizmu na rynku polskim, zatytułowanej „Obdarowani” oraz wielu artykułów w prasie chrześcijańskiej i Internecie. W swojej służbie akcentuje rolę Ducha Świętego, zachęcając każdą osobę do praktycznej relacji z Nim. Wraz ze swoją żoną Wiolą prowadzą spotkania Szkoły Uczniostwa Misyjnego King's Kids International Polska, w ramach których przygotowują młode pokolenie do służby Bogu.</p>
+                    <p className={styles.speakerDescription}>Jedną z sobotnich sesji poprowadzi pastor Mariusz Antoszczuk, pastor kościoła KZ “Kanaan” w Namysłowie. Misjonarz, człowiek przebudzenia, kochający kościół. Autor największej monografii z zakresu pentekostalizmu na rynku polskim, zatytułowanej „Obdarowani” oraz wielu artykułów w prasie chrześcijańskiej i Internecie. W swojej służbie akcentuje rolę Ducha Świętego, zachęcając każdą osobę do praktycznej relacji z Nim. Wraz ze swoją żoną Wiolą prowadzą spotkania Szkoły Uczniostwa Misyjnego King&apos;s Kids International Polska, w ramach których przygotowują młode pokolenie do służby Bogu.</p>
                 </div>
                 <div className={styles.speaker}>
                     <Image 

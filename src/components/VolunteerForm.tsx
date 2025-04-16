@@ -1,11 +1,5 @@
 import React, { useState } from "react"
 import styles from '../styles/registration.module.scss'
-import Select, { StylesConfig, GroupBase } from "react-select";
-
-interface OptionType {
-  value: string;
-  label: string;
-}
 
 interface VolunteerFormProps {
   setIsSend: React.Dispatch<React.SetStateAction<boolean>>
@@ -41,6 +35,7 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
         throw new Error(body.error)
       }
     }).catch(err => {
+      console.error(err);
       setIsLoading(false);
       setStatus('ERR')
     })

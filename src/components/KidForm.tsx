@@ -35,6 +35,7 @@ export default function KidForm({ setIsSend }: { setIsSend: React.Dispatch<React
         throw new Error(body.error)
       }
     }).catch(err => {
+      console.error(err);
       setIsLoading(false);
       setStatus('ERR')
     })
