@@ -88,7 +88,7 @@ export default function Description() {
             <h2 className={styles.subtitle}>Posiłki</h2>
             <p className={styles.paragraph}>Przewidujemy dwugodzinną przerwę obiadową. Zachęcamy do korzystania z foodtracków na miejscu! </p>
             <h2 className={styles.subtitle}>Dojazd i parking</h2>
-            <p className={styles.paragraph}>Do budynku kościoła można łatwo dostać się komunikacją miejską. Kierować należy się na przystanek Orla, do którego jeżdż linie tramwajowe i autobusowe: 2, 6, 7, 14, 17, D, 126.</p>
+            <p className={styles.paragraph}>Do budynku kościoła można łatwo dostać się komunikacją miejską. Kierować należy się na przystanek Orla, do którego dojeżdżają linie tramwajowe i autobusowe: 2, 6, 7, 14, 17, D, 126.</p>
             <p className={styles.paragraph}>Kościół “Antiochia” posiada kilkanaście miejsc parkingowych. Dodatkowy parking znajduje się przy pobliskim sklepie Lidl, można też zaparkować po drugiej stronie ulicy przy Parku Południowym.</p>
             <h2 className={styles.subtitle}>Rejestracja</h2>
             <p className={styles.paragraph}>Konferencja organizowana jest przez ludzi, którzy dobrowolnie poświęcają swój czas, aby służyć innym. Jeśli masz chęć również się zaangażować, zarejestruj się poprzez formularz dla wolontariuszy.</p>

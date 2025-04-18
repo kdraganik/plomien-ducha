@@ -12,6 +12,7 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
   const [name, setName] = useState("")
   const [surname, setSurname] = useState("")
   const [email, setEmail] = useState("")
+  const [service, setService] = useState("")
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
@@ -43,7 +44,7 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
 
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.subtitle}>Rejestracja</h2>
+      <h2 className={styles.subtitle}>Rejestracja na wolontariusza</h2>
       <form className={styles.formContainer} onSubmit={ handleSubmit }>
         <label htmlFor="imie" className={styles.label}>Imię</label>
         <input autoFocus required type="text" className={styles.textInput} id="imie" value={name} onChange={e => setName(e.target.value)}/>
@@ -51,6 +52,8 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
         <input required type="text" className={styles.textInput} id="nazwisko" value={surname} onChange={e => setSurname(e.target.value)}/>
         <label htmlFor="email" className={styles.label}>Email</label>
         <input required type="email" className={styles.textInput} id="email" value={email} onChange={e => setEmail(e.target.value)}/>
+        <label htmlFor="service" className={styles.label}>Czy chcesz być zaangażowany w konretną służbę? W jaką?</label>
+        <input required type="service" className={styles.textInput} id="service" value={service} onChange={e => setService(e.target.value)}/>
         {status == 'ERR' ? <div className={styles.error}>Wystąpił błąd, spróbuj ponownie</div> : ""}
         {isLoading ? <div className={styles.loader}><div></div><div></div><div></div><div></div></div> : <input type="submit" className={styles.submit} value="Zapisz" />}
       </form>

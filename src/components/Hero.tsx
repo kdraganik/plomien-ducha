@@ -14,7 +14,7 @@ export default function Hero() {
             />
             <h1 className={styles.title}>Płomień Ducha</h1>
             <h2 className={styles.subtitle}>Okręgowa Konferencja Przebudzeniowa</h2>
-            <h3 className={styles.datePlace}>6-7 czerwca 2025 r. ___ Wrocław</h3>
+            <h3 className={styles.datePlace}>6-7 VI 2025 ___ Wrocław</h3>
             <h4 className={styles.price}>udział bezpłatny</h4>
             <Link href='/rejestracja/uczestnik' className={styles.button}>
                 Rejestracja

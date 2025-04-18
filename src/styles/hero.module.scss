@@ -15,8 +15,10 @@
 .title{
     font-size: 5em;
     margin-bottom: -.2em;
+    font-weight: 400;
 }
 .subtitle{
+    text-transform: uppercase;
     font-size: 2em;
     font-family: variables.$sans-serif-font;
     font-weight: 200;
@@ -92,12 +94,11 @@
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 1px;
-    border: 2px solid variables.$secondary-color;
-    color: variables.$secondary-color;
+    border: 2px solid variables.$main-color;
+    color: variables.$main-color;
     transition: all .3s ease-out;
     &:hover{
-        background: variables.$secondary-color;
+        background: variables.$main-color;
         color: white;
-        border: 2px solid variables.$secondary-color;
     }
 }
