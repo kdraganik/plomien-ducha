@@ -104,7 +104,7 @@ export default function Description() {
                 Rejestracja na zajęcia dla dzieci
             </Link>
             <div className={styles.videoBox}>
-                <iframe className={styles.video} src="https://www.youtube.com/embed/Qd8PUZ3LSvI?si=u7Vnfp3TLqJJ2MBs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="0" allowFullScreen></iframe>
+                <iframe className={styles.video} src="https://www.youtube.com/embed/GCpsKk8gSaU?si=28RZ80-58aPI6LZL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="0" allowFullScreen></iframe>
             </div>
             <div className={styles.footerSpace}></div>
         </div>

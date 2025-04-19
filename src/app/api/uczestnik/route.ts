@@ -113,7 +113,7 @@ async function sendEmail(email: string): Promise<Result> {
                   </tr>
                   <tr>
                     <td align="center" style="padding-top: 16px; font-size: 18px;">
-                      Cieszymy się, że dołączysz do nas 6–7 czerwca 2025 r. we Wrocławiu.
+                      Cieszymy się, że dołączysz do nas 6–7 VI 2025 r. we Wrocławiu.
                     </td>
                   </tr>
                   <tr>
