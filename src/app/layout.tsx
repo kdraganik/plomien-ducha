@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-import "#/globals.scss";
-import styles from "#/layout.module.scss";
+import "@/styles/globals.scss";
+import styles from "@/styles/layout.module.scss";
 
 import bg from '../images/bg.jpg'
 
