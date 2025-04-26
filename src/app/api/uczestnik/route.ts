@@ -11,6 +11,7 @@ interface RequestData {
   engTrans: boolean;
   ukrTrans: boolean;
   needAccommodation: boolean;
+  birthYear: number;
 }
 
 interface Result {
@@ -33,6 +34,7 @@ async function airtableRequest(data: RequestData): Promise<Result> {
               "Nazwisko": data.surname,
               "Email": data.email,
               "Dni": data.days,
+              "Rok urodzenia": data.birthYear,
               "Tłumaczenie angielskie": data.engTrans,
               "Tłumaczenie ukraińskie": data.ukrTrans,
               "Data rejestracji": new Date().toLocaleDateString(),
