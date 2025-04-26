@@ -12,7 +12,7 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
   const [name, setName] = useState("")
   const [surname, setSurname] = useState("")
   const [email, setEmail] = useState("")
-  const [service, setService] = useState("")
+  const [church, setChurch] = useState("")
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
@@ -22,6 +22,7 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
       name,
       surname,
       email,
+      church,
     }
     fetch("/api/wolontariusz", {
       method: "POST",
@@ -52,8 +53,8 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
         <input required type="text" className={styles.textInput} id="nazwisko" value={surname} onChange={e => setSurname(e.target.value)}/>
         <label htmlFor="email" className={styles.label}>Email</label>
         <input required type="email" className={styles.textInput} id="email" value={email} onChange={e => setEmail(e.target.value)}/>
-        <label htmlFor="service" className={styles.label}>Czy chcesz być zaangażowany w konretną służbę? W jaką?</label>
-        <input required type="service" className={styles.textInput} id="service" value={service} onChange={e => setService(e.target.value)}/>
+        <label htmlFor="church" className={styles.label}>Z jakiego jesteś kościoła?</label>
+        <input required type="church" className={styles.textInput} id="church" value={church} onChange={e => setChurch(e.target.value)}/>
         {status == 'ERR' ? <div className={styles.error}>Wystąpił błąd, spróbuj ponownie</div> : ""}
         {isLoading ? <div className={styles.loader}><div></div><div></div><div></div><div></div></div> : <input type="submit" className={styles.submit} value="Zapisz" />}
       </form>

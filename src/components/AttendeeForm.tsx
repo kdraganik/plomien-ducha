@@ -22,6 +22,7 @@ export default function AttendeeForm({ setIsSend }: AttendeeFormProps) {
   const [engTrans, setEngTrans] = useState(false)
   const [ukrTrans, setUkrTrans] = useState(false)
   const [needAccommodation, setNeedAccommodation] = useState(false)
+  const [birthYear, setBirthYear] = useState(1950)
 
   const options1: OptionType[] = [
     { value: "Pt + Sob", label: "Cała konferencja — piątek i sobota" },
@@ -91,7 +92,8 @@ export default function AttendeeForm({ setIsSend }: AttendeeFormProps) {
       days,
       engTrans,
       ukrTrans,
-      needAccommodation
+      needAccommodation,
+      birthYear,
     }
     fetch("/api/uczestnik", {
       method: "POST",
@@ -122,6 +124,15 @@ export default function AttendeeForm({ setIsSend }: AttendeeFormProps) {
         <input required type="text" className={styles.textInput} id="nazwisko" value={surname} onChange={e => setSurname(e.target.value)}/>
         <label htmlFor="email" className={styles.label}>Email</label>
         <input required type="email" className={styles.textInput} id="email" value={email} onChange={e => setEmail(e.target.value)}/>
+        <label htmlFor="birthYear" className={styles.label}>Rok urodzenia</label>
+        <input 
+          required 
+          type="number" 
+          className={styles.textInput} 
+          id="birthYear" 
+          value={birthYear} 
+          onChange={e => setBirthYear(Number(e.target.value))}
+        />
         <label htmlFor="days" className={styles.label}>W jakie dni planujesz być na konferencji?</label>
         <Select id="days" name="days" required className={styles.select} options={options1} styles={customStyles} isClearable={false} isSearchable={false} components={{ IndicatorSeparator: () => null }} onChange={option => setDays(option?.value || '')} placeholder="Wybierz opcję"/>
         <div className={styles.translationBox}>
@@ -139,13 +150,14 @@ export default function AttendeeForm({ setIsSend }: AttendeeFormProps) {
             className={styles.checkbox} 
             checked={needAccommodation} 
             onChange={e => setNeedAccommodation(e.target.checked)}
+            disabled={Number(birthYear) < 1999} // disable if not born in or after 1999
           />
           <label htmlFor="needAccommodation" className={styles.checkboxLabel}>
-            Potrzebuję noclegu z piątku na sobotę*
+            Potrzebuję noclegu z piątku na sobotę { Number(birthYear) < 1999 && "*" }
           </label>
         </div>
         <div className={styles.annotation}>
-          <small>*nocleg dostępny jest tylko dla osób uczestniczących w piątkowej częsci dla młodych</small>
+          { Number(birthYear) < 1999 && "*nocleg dostępny jest tylko dla osób uczestniczących w piątkowej części dla młodych w wieku 13-26 lat" }
         </div>
         {status == 'ERR' ? <div className={styles.error}>Wystąpił błąd, spróbuj ponownie</div> : ""}
         {isLoading ? <div className={styles.loader}><div></div><div></div><div></div><div></div></div> : <input type="submit" className={styles.submit} value="Zapisz" />}

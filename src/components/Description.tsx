@@ -53,7 +53,7 @@ export default function Description() {
                 </div>
             </div>
             <h2 className={styles.subtitle}>Opieka nad dziećmi</h2>
-            <p className={styles.paragraph}>Podczas sobotnich sesji zapraszamy wszystkie dzieci w wieku od 3 do 13 lat na wyjątkowe, bezpłatne zajęcia, podczas których będą mogły wartościowo spędzić czas. Dla rodziców z dziećmi poniżej 3 roku przygotowana będzie przeszklona przestrzeń w sali głównej.</p>
+            <p className={styles.paragraph}>Podczas sobotnich sesji zapraszamy wszystkie dzieci w wieku od 3 do 12 lat na wyjątkowe, bezpłatne zajęcia, podczas których będą mogły wartościowo spędzić czas. Dla rodziców z dziećmi poniżej 3 roku przygotowana będzie przeszklona przestrzeń w sali głównej.</p>
             <h2 className={styles.subtitle}>Strefa młodych</h2>
             <p className={styles.paragraph}>Dla osób w wieku 13-25 lat przygotowaliśmy specjalny program na piątkowy wieczór! Nie zabraknie dobrego jedzenia (darmowa pizza:) oraz czasu integracji i nawiązywania nowych relacji.</p>
             <p className={styles.paragraph}>Przede wszystkim chcemy umożliwić młodym ludziom spotkanie z Duchem Świętym w przyjaznym środowisku i w atmosferze uwielbienia. </p>
@@ -62,7 +62,7 @@ export default function Description() {
             <h2 className={styles.subtitle}>Plan konferencji</h2>
             <div className={styles.planBox}>
                 <h3 className={styles.day}>Piątek</h3>
-                <p className={styles.paragraph}>Piątkowy wieczór skierowany jest w szczególności dla osób w wieku 13-25 lat. Na sesję wykładową i czas uwielbienia zapraszamy wszystkich chętnych.</p>
+                <p className={styles.paragraph}>Piątkowy wieczór skierowany jest w szczególności dla osób w wieku 13-25 lat. Na sesję wykładową i czas uwielbienia zapraszamy wszystkich - niezależnie od wieku.</p>
                 <div className={styles.dayBox}>
                     <div><span className={styles.time}>17:00</span><span className={styles.event}>rejestracja</span></div>
                     <div><span className={styles.time}>18:00</span><span className={styles.event}>sesja / mówca: Luke Greenwood</span></div>
@@ -104,7 +104,7 @@ export default function Description() {
                 Rejestracja na zajęcia dla dzieci
             </Link>
             <div className={styles.videoBox}>
-                <iframe className={styles.video} src="https://www.youtube.com/embed/GCpsKk8gSaU?si=28RZ80-58aPI6LZL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="0" allowFullScreen></iframe>
+                <iframe className={styles.video} src="https://www.youtube.com/embed/dbO1f5jto4I?si=A8EGwzecEHBKdZj1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="0" allowFullScreen></iframe>
             </div>
             <div className={styles.footerSpace}></div>
         </div>

@@ -7,7 +7,7 @@ interface RequestData {
   name: string;
   surname: string;
   email: string;
-  service: string;
+  church: string;
 }
 
 interface Result {
@@ -29,7 +29,7 @@ async function airtableRequest(data: RequestData): Promise<Result> {
               "Imię": data.name,
               "Nazwisko": data.surname,
               "Email": data.email,
-              "Służba": data.service,
+              "Kościół": data.church,
               "Data rejestracji": new Date().toLocaleDateString(),
             }
           }
