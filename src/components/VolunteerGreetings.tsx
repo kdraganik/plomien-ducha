@@ -15,7 +15,7 @@ export default function VolunteerGreetings(){
       <Link href='/rejestracja/dziecko' className={styles.registryButton}>
           Rejestracja na zajęcia dla dzieci
       </Link>
-      <p className={styles.instruction}>Jeśli planujesz przyjechać na konferencje całą rodziną to zachęcamy do zarejestrowania dzieci na specjalnie przygotowane zajęcia.</p>
+      <p className={styles.instruction}>Jeśli planujesz przyjechać na konferencje całą rodziną, zachęcamy do zarejestrowania dzieci na specjalnie przygotowane zajęcia.</p>
     </div>
   )
 }

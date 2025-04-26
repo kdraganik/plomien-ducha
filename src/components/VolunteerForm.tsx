@@ -54,7 +54,7 @@ export default function VolunteerForm({ setIsSend }: VolunteerFormProps) {
         <label htmlFor="email" className={styles.label}>Email</label>
         <input required type="email" className={styles.textInput} id="email" value={email} onChange={e => setEmail(e.target.value)}/>
         <label htmlFor="church" className={styles.label}>Z jakiego jesteś kościoła?</label>
-        <input required type="church" className={styles.textInput} id="church" value={church} onChange={e => setChurch(e.target.value)}/>
+        <input required type="text" className={styles.textInput} id="church" value={church} onChange={e => setChurch(e.target.value)}/>
         {status == 'ERR' ? <div className={styles.error}>Wystąpił błąd, spróbuj ponownie</div> : ""}
         {isLoading ? <div className={styles.loader}><div></div><div></div><div></div><div></div></div> : <input type="submit" className={styles.submit} value="Zapisz" />}
       </form>
