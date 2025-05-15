@@ -74,12 +74,12 @@ export default function Description() {
             </div>
             <div className={styles.planBox}>
                 <h3 className={styles.day}>Sobota</h3>
-                <p className={styles.paragraph}>W sobotę przewidujemy 2 główne sesje oraz zajęcia warsztatowe, na które będzie można zapisać się podczas rejestracji na miejscu.</p>
+                <p className={styles.paragraph}>W sobotę przewidujemy 3 główne sesje, wraz z czasem uwielbienia i modlitwy.</p>
                 <div className={styles.dayBox}>
                     <div><span className={styles.time}>09:30</span><span className={styles.event}>rejestracja</span></div>
                     <div><span className={styles.time}>11:00</span><span className={styles.event}>sesja / mówca: Mariusz Antoszczuk</span></div>
                     <div><span className={styles.time}>13:00</span><span className={styles.event}>przerwa kawowa</span></div>
-                    <div><span className={styles.time}>14:00</span><span className={styles.event}>warsztaty: dary Ducha Świętego</span></div>
+                    <div><span className={styles.time}>14:00</span><span className={styles.event}>sesja / mówca: Mirosław Szatkowski</span></div>
                     <div><span className={styles.time}>15:00</span><span className={styles.event}>przerwa obiadowa</span></div>
                     <div><span className={styles.time}>17:00</span><span className={styles.event}>sesja / mówca: Leszek Mocha</span></div>
                     <div><span className={styles.time}>19:00</span><span className={styles.event}>zakończenie</span></div>
