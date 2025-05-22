@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/description.module.scss';
-import speaker1 from '@/images/mowca1.png'
+import speaker1 from '@/images/mowcy1.png'
 import speaker2 from '@/images/mowca2.png'
 import speaker3 from '@/images/mowca3.png'
 
