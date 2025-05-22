@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/description.module.scss';
-import speaker1 from '@/images/mowca1.png'
+import speaker1 from '@/images/mowcy1.png'
 import speaker2 from '@/images/mowca2.png'
 import speaker3 from '@/images/mowca3.png'
 
@@ -25,9 +25,9 @@ export default function Description() {
                         alt="Speaker 1"
                     />
                     <div className={styles.speakerInfo}>
-                        <h3 className={styles.speakerName}>Luke Greenwood</h3>
+                        <h3 className={styles.speakerName}>Krzysztof i Sara Szczygieł</h3>
                     </div>
-                    <p className={styles.speakerDescription}>W piątkowy wieczór inspirującym słowem podzieli się z nami Luke Greenwood, misjonarz, ewangelista, mówca i artysta. Razem z żoną Anią są jednymi z głównych liderów ogólnoświatowej organizacji misyjnej Steiger, której celem jest dzielenie się ewangelią wśród młodego pokolenia. Mieszkają we Wrocławiu, gdzie zaangażowani są w pracę kościoła „Kierunek”. Luke napisał książkę „Global Youth Culture”. Jest wyjątkowym mówcą, który potrafi przekazać głębokie duchowe prawdy w prosty, porywający sposób.</p>
+                    <p className={styles.speakerDescription}>Krzysztof i Sara od ponad dwóch lat pełnią funkcję pastorów w KZ Centrum Ewangelii w Głogowie, a służbę Bogu i Kościołowi traktują jako ogromny przywilej. Od wielu lat są zaangażowani w pracę z dziećmi i młodzieżą – prowadząc, wspierając i inspirując kolejne pokolenia. Ich serca biją szczególnie mocno dla młodych ludzi. Wierzą, że Kościół powinien być przestrzenią, w której młodzież może rozwijać swój charakter, odkrywać powołanie i odnaleźć swoje miejsce – w atmosferze szacunku, bezpieczeństwa i zachęty. Prywatnie są rodzicami dwójki – już nastoletnich – dzieci oraz uroczego pieska Balbinki. Więcej rzeczy ich różni niż łączy, ale to, co ich naprawdę spaja (oprócz miłości do siebie, oczywiście), to miłość do Boga i Kościoła, muzyka elektroniczna, podróże oraz dobre jedzenie.</p>
                 </div>
                 <div className={styles.speaker}>
                     <Image 
@@ -65,7 +65,7 @@ export default function Description() {
                 <p className={styles.paragraph}>Piątkowy wieczór skierowany jest w szczególności dla osób w wieku 13-25 lat. Na sesję wykładową i czas uwielbienia zapraszamy wszystkich - niezależnie od wieku.</p>
                 <div className={styles.dayBox}>
                     <div><span className={styles.time}>17:00</span><span className={styles.event}>rejestracja</span></div>
-                    <div><span className={styles.time}>18:00</span><span className={styles.event}>sesja / mówca: Luke Greenwood</span></div>
+                    <div><span className={styles.time}>18:00</span><span className={styles.event}>sesja / mówcy: Krzysztof i Sara Szczygieł</span></div>
                     <p className={styles.daysubheader}>czas dla młodych</p>
                     <div><span className={styles.time}>20:30</span><span className={styles.event}>pizza party</span></div>
                     <div><span className={styles.time}>21:00</span><span className={styles.event}>integracja</span></div>
