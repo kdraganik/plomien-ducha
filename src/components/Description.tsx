@@ -25,7 +25,7 @@ export default function Description() {
                         alt="Speaker 1"
                     />
                     <div className={styles.speakerInfo}>
-                        <h3 className={styles.speakerName}>Krzysztof i Sara Szczygieł</h3>
+                        <h3 className={styles.speakerName}>Ps. Krzysztof i Sara Szczygieł</h3>
                     </div>
                     <p className={styles.speakerDescription}>Krzysztof i Sara od ponad dwóch lat pełnią funkcję pastorów w KZ Centrum Ewangelii w Głogowie, a służbę Bogu i Kościołowi traktują jako ogromny przywilej. Od wielu lat są zaangażowani w pracę z dziećmi i młodzieżą – prowadząc, wspierając i inspirując kolejne pokolenia. Ich serca biją szczególnie mocno dla młodych ludzi. Wierzą, że Kościół powinien być przestrzenią, w której młodzież może rozwijać swój charakter, odkrywać powołanie i odnaleźć swoje miejsce – w atmosferze szacunku, bezpieczeństwa i zachęty. Prywatnie są rodzicami dwójki – już nastoletnich – dzieci oraz uroczego pieska Balbinki. Więcej rzeczy ich różni niż łączy, ale to, co ich naprawdę spaja (oprócz miłości do siebie, oczywiście), to miłość do Boga i Kościoła, muzyka elektroniczna, podróże oraz dobre jedzenie.</p>
                 </div>
