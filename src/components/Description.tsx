@@ -74,19 +74,19 @@ export default function Description() {
             </div>
             <div className={styles.planBox}>
                 <h3 className={styles.day}>Sobota</h3>
-                <p className={styles.paragraph}>W sobotę przewidujemy 3 główne sesje, wraz z czasem uwielbienia i modlitwy.</p>
+                <p className={styles.paragraph}>W sobotę przewidujemy 2 główne sesje, wraz z czasem uwielbienia i modlitwy oraz warsztat.</p>
                 <div className={styles.dayBox}>
                     <div><span className={styles.time}>09:30</span><span className={styles.event}>rejestracja</span></div>
                     <div><span className={styles.time}>11:00</span><span className={styles.event}>sesja / mówca: Mariusz Antoszczuk</span></div>
                     <div><span className={styles.time}>13:00</span><span className={styles.event}>przerwa kawowa</span></div>
-                    <div><span className={styles.time}>14:00</span><span className={styles.event}>sesja / mówca: Mirosław Szatkowski</span></div>
+                    <div><span className={styles.time}>14:00</span><span className={styles.event}>warsztat / mówca: Mirosław Szatkowski</span></div>
                     <div><span className={styles.time}>15:00</span><span className={styles.event}>przerwa obiadowa</span></div>
                     <div><span className={styles.time}>17:00</span><span className={styles.event}>sesja / mówca: Leszek Mocha</span></div>
                     <div><span className={styles.time}>19:00</span><span className={styles.event}>zakończenie</span></div>
                 </div>
             </div>
             <h2 className={styles.subtitle}>Posiłki</h2>
-            <p className={styles.paragraph}>Przewidujemy dwugodzinną przerwę obiadową.<br/>Zachęcamy do korzystania z foodtracków na miejscu! </p>
+            <p className={styles.paragraph}>Przewidujemy dwugodzinną przerwę obiadową.<br/>Zachęcamy do skorzystania z oferty pobliskich restauracji, które znajdziecie pod <a href="https://www.google.com/maps/@/data=!3m1!4b1!4m3!11m2!2szoRUivtrS2WDoSvxQ04UGw!3e3?entry=tts&g_ep=EgoyMDI1MDUyOC4wKgBIAVAD&skid=5e4387db-85d3-4716-9fcc-f7cb5e0f7b14">tym linkiem</a></p>
             <h2 className={styles.subtitle}>Dojazd i parking</h2>
             <p className={styles.paragraph}>Do budynku kościoła można łatwo dostać się komunikacją miejską. Kierować należy się na przystanek Orla, do którego dojeżdżają linie tramwajowe i autobusowe: 2, 6, 7, 14, 17, D, 126.</p>
             <p className={styles.paragraph}>Kościół “Antiochia” posiada kilkanaście miejsc parkingowych. Dodatkowy parking znajduje się przy pobliskim sklepie Lidl, można też zaparkować po drugiej stronie ulicy przy Parku Południowym.</p>
