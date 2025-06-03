@@ -74,7 +74,7 @@ export default function Description() {
             </div>
             <div className={styles.planBox}>
                 <h3 className={styles.day}>Sobota</h3>
-                <p className={styles.paragraph}>W sobotę przewidujemy 2 główne sesje, wraz z czasem uwielbienia i modlitwy oraz warsztat.</p>
+                <p className={styles.paragraph}>W sobotę zapraszamy na dwie sesje z uwielbieniem i modlitwą, a także warsztat na temat darów Ducha Świętego.</p>
                 <div className={styles.dayBox}>
                     <div><span className={styles.time}>09:30</span><span className={styles.event}>rejestracja</span></div>
                     <div><span className={styles.time}>11:00</span><span className={styles.event}>sesja / mówca: Mariusz Antoszczuk</span></div>
